@@ -1,4 +1,4 @@
-package com.example.administrator.day_10_10;
+package com.example.administrator.day_10_10.ui;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.administrator.day_10_10.R;
 
 public class ScrollingActivity extends AppCompatActivity {
 

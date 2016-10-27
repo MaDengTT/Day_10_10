@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.administrator.day_10_10.ScrollingActivity">
+    tools:context="com.example.administrator.day_10_10.ui.ScrollingActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"

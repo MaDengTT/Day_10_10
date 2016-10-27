@@ -1,8 +1,7 @@
-package com.example.administrator.day_10_10;
+package com.example.administrator.day_10_10.ui;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
-import android.app.Service;
 import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
@@ -10,7 +9,6 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,22 +16,22 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.administrator.day_10_10.R;
 import com.example.administrator.day_10_10.api.Server;
 import com.example.administrator.day_10_10.utils.AdViewPagerUril;
 
-import java.util.List;
-
 import rx.Observable;
-import rx.Observer;
 import rx.Subscriber;
+import rx.functions.Action0;
 import rx.functions.Action1;
+import rx.functions.Func1;
 import rx.functions.Func2;
-import rx.internal.operators.OperatorGroupBy;
-import rx.observers.Observers;
 
 public class TestActivity extends AppCompatActivity {
 
     ViewPager vpLoop;
+
+
 
     public static void startAction(Activity mActivity, View view) {
         Intent intent = new Intent(mActivity, TestActivity.class);
@@ -115,7 +113,12 @@ public class TestActivity extends AppCompatActivity {
             }
         });
 
-
+        getDatas1().groupBy(new Func1<String, String>() {
+            @Override
+            public String call(String s) {
+                return null;
+            }
+        });
 
         Observable.zip(getDatas1(), getDatas2(), new Func2<String, Integer, String>() {
 

@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.administrator.day_10_10.MainActivity"
+    tools:context="com.example.administrator.day_10_10.ui.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <ImageView
@@ -25,4 +25,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+    <Button
+        android:layout_above="@+id/but_to"
+        android:id="@+id/but_of"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/but_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/hello_blank_fragment"
+        />
 </RelativeLayout>
